@@ -1,0 +1,88 @@
+Task 1: Message Storage and Retrieval
+Research and Analysis:
+
+Message Ordering: Ensuring messages are ordered by timestamp is crucial for a coherent conversation flow.
+
+Search Complexity: Efficient search capabilities are needed to quickly retrieve specific messages.
+
+Storage Overhead: Minimizing storage overhead is important for performance and scalability.
+
+Evaluated Data Structures:
+
+Arrays:
+
+Pros: Fast access with an index, simple to implement.
+
+Cons: Inefficient for insertions/deletions in the middle, not ideal for dynamic data.
+
+Linked Lists:
+
+Pros: Dynamic size, efficient insertions/deletions.
+
+Cons: Slow access times, higher memory usage due to pointers.
+
+Hash Tables:
+
+Pros: Fast lookups, insertions, and deletions.
+
+Cons: High memory overhead, unordered data.
+
+Trees ( AVL Trees, Red-Black Trees):
+
+Pros: Balanced structure ensures O(log n) operations.
+
+Cons: More complex to implement, moderate storage overhead.
+
+Recommended Approach:
+
+Use AVL Trees or Red-Black Trees to store messages ensuring efficient ordered retrieval and dynamic updates.
+
+Task 2: Real-Time Updates
+Real-Time Communication Techniques:
+
+Polling:
+
+Pros: Simple to implement.
+
+Cons: Inefficient, high latency, high resource consumption.
+
+Long-Polling:
+
+Pros: Better than polling, reduces unnecessary requests.
+
+Cons: Still not optimal for real-time needs, higher latency.
+
+Websockets:
+
+Pros: Full-duplex communication, low latency, efficient for real-time updates.
+
+Cons: More complex to implement, requires persistent connection.
+
+Recommended Approach:
+
+Implement Websockets for real-time updates ensuring minimal latency and resource consumption.
+
+Task 3: Conversation List Management
+Evaluated Data Structures:
+
+Arrays and Linked Lists:
+
+Pros: Simple and straightforward.
+
+Cons: Inefficient for large data sets, slow search operations.
+
+Hash Tables:
+
+Pros: Fast access and retrieval using unique keys.
+
+Cons: Unordered data, high memory usage.
+
+Trees:
+
+Pros: Efficient for sorting, filtering, and indexing.
+
+Cons: Moderate complexity, balanced structure required.
+
+Recommended Approach:
+
+Use Hash Tables for quick access to conversation metadata, complemented by Balanced Trees for sorting, filtering, and indexing conversations.

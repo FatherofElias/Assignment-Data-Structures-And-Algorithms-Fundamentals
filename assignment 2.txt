@@ -1,0 +1,49 @@
+Identifying Key Operations
+The provided algorithm is a basic Bubble Sort, which arranges an array of integers in ascending order by repeatedly stepping through the list, comparing adjacent elements, and swapping them if they are in the wrong order.
+
+Key Operations:
+
+Outer Loop (for i in range(n)): This runs n times, where n is the length of the array.
+
+Inner Loop (for j in range(0, n-i-1)): This runs fewer times with each iteration of the outer loop, specifically n-i-1 times.
+
+Comparison (if arr[j] > arr[j+1]): Each element is compared with the next one.
+
+Swapping (arr[j], arr[j+1] = arr[j+1], arr[j]): Elements are swapped if they are in the wrong order.
+
+Task 2: Calculating Big O Complexity
+Analyzing the loops:
+
+The outer loop runs n times.
+
+The inner loop runs n-1 times, then n-2 times, and so on, down to 1.
+
+The total number of comparisons is:
+(n-1) + (n-2) + (n-3) + ... + 1 = (n-1)n over 2
+
+This sum is approximately n squared over 2
+
+so the time complexity is 
+O(n squared)
+
+
+Task 3: Efficiency Analysis
+Efficiency Aspects:
+
+Time Complexity: The algorithm has a time complexity of 
+O(n squared) which is inefficient for large datasets.
+
+Space Complexity: The space complexity is O(1)
+because it sorts the array in place without needing additional memory.
+
+Potential Improvements:
+
+Improved Sorting Algorithms:
+
+Merge Sort: O(nlogn) time complexity. It divides the array into halves, sorts them, and merges them back.
+
+Quick Sort: Average-case O(nlogn) time complexity. It selects a pivot and partitions the array into elements less than and greater than the pivot.
+
+Heap Sort: 
+
+O(nlogn) time complexity. It builds a heap and repeatedly extracts the maximum element.
